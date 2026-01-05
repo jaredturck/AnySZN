@@ -1,0 +1,10 @@
+@use '_vars' as vars;
+
+body {
+    background: vars.$cream-white;
+    font-family: 'Lato', system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+}
+
+.padding-top-4rem {
+    padding-top: 4rem;
+}

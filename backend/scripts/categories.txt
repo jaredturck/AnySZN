@@ -1,0 +1,180 @@
+T-shirt,Tops,Unisex
+Long-sleeve t-shirt,Tops,Unisex
+Shirt,Tops,Unisex
+Blouse,Tops,Womens
+Polo shirt,Tops,Unisex
+Tank top,Tops,Unisex
+Vest,Tops,Unisex
+Camisole,Tops,Womens
+Crop top,Tops,Womens
+Sweatshirt,Tops,Unisex
+Hoodie,Tops,Unisex
+Sweater,Tops,Unisex
+Jumper,Tops,Unisex
+Cardigan,Tops,Unisex
+Turtleneck,Tops,Unisex
+Denim jacket,Outerwear,Unisex
+Leather jacket,Outerwear,Unisex
+Bomber jacket,Outerwear,Unisex
+Puffer jacket,Outerwear,Unisex
+Windbreaker,Outerwear,Unisex
+Coat,Outerwear,Unisex
+Parka,Outerwear,Unisex
+Trench coat,Outerwear,Unisex
+Overcoat,Outerwear,Unisex
+Raincoat,Outerwear,Unisex
+Blazer,Outerwear,Unisex
+Gilet,Outerwear,Unisex
+Jeans,Bottoms,Unisex
+Chinos,Bottoms,Unisex
+Casual trousers,Bottoms,Unisex
+Dress trousers,Bottoms,Unisex
+Cargo pants,Bottoms,Unisex
+Leggings,Bottoms,Womens
+Joggers,Bottoms,Unisex
+Sweatpants,Bottoms,Unisex
+Shorts,Bottoms,Unisex
+Denim shorts,Bottoms,Unisex
+Tailored shorts,Bottoms,Unisex
+Culottes,Bottoms,Womens
+Mini skirt,Dresses & Skirts,Womens
+Midi skirt,Dresses & Skirts,Womens
+Maxi skirt,Dresses & Skirts,Womens
+Pencil skirt,Dresses & Skirts,Womens
+A-line skirt,Dresses & Skirts,Womens
+Slip skirt,Dresses & Skirts,Womens
+Day dress,Dresses & Skirts,Womens
+Sundress,Dresses & Skirts,Womens
+Shirt dress,Dresses & Skirts,Womens
+Wrap dress,Dresses & Skirts,Womens
+Cocktail dress,Dresses & Skirts,Womens
+Evening gown,Dresses & Skirts,Womens
+Bodycon dress,Dresses & Skirts,Womens
+Jumpsuit,One-pieces,Womens
+Boilersuit,One-pieces,Unisex
+Playsuit/Romper,One-pieces,Womens
+Overalls,One-pieces,Unisex
+Dungarees,One-pieces,Unisex
+Briefs,Underwear & Lingerie,Mens
+Boxers,Underwear & Lingerie,Mens
+Boxer briefs,Underwear & Lingerie,Mens
+Trunks,Underwear & Lingerie,Mens
+Panties,Underwear & Lingerie,Womens
+Thong,Underwear & Lingerie,Womens
+Bra,Underwear & Lingerie,Womens
+Bralette,Underwear & Lingerie,Womens
+Sports bra,Underwear & Lingerie,Womens
+Shapewear,Underwear & Lingerie,Womens
+Bodysuit,Underwear & Lingerie,Womens
+Corset,Underwear & Lingerie,Womens
+Bustier,Underwear & Lingerie,Womens
+Socks,Hosiery & Socks,Unisex
+Ankle socks,Hosiery & Socks,Unisex
+Crew socks,Hosiery & Socks,Unisex
+Sports socks,Hosiery & Socks,Unisex
+Tights,Hosiery & Socks,Womens
+Stockings,Hosiery & Socks,Womens
+Knee-high socks,Hosiery & Socks,Unisex
+Leg warmers,Hosiery & Socks,Womens
+Pyjama set,Sleepwear & Loungewear,Unisex
+Pyjama pants,Sleepwear & Loungewear,Unisex
+Pyjama shorts,Sleepwear & Loungewear,Unisex
+Nightgown,Sleepwear & Loungewear,Womens
+Nightdress,Sleepwear & Loungewear,Womens
+Sleep shirt,Sleepwear & Loungewear,Unisex
+Robe,Sleepwear & Loungewear,Unisex
+Dressing gown,Sleepwear & Loungewear,Unisex
+Loungewear set,Sleepwear & Loungewear,Unisex
+Sweat set,Sleepwear & Loungewear,Unisex
+Onesie,Sleepwear & Loungewear,Unisex
+House dress,Sleepwear & Loungewear,Womens
+Sports t-shirt,Activewear & Sportswear,Unisex
+Training top,Activewear & Sportswear,Unisex
+Running shorts,Activewear & Sportswear,Unisex
+Training leggings,Activewear & Sportswear,Womens
+Track pants,Activewear & Sportswear,Unisex
+Tracksuit,Activewear & Sportswear,Unisex
+Compression top,Activewear & Sportswear,Unisex
+Compression tights,Activewear & Sportswear,Unisex
+Yoga pants,Activewear & Sportswear,Womens
+Gym shorts,Activewear & Sportswear,Unisex
+Team jersey,Activewear & Sportswear,Unisex
+Rash vest,Activewear & Sportswear,Unisex
+Bikini top,Swimwear & Beachwear,Womens
+Bikini bottoms,Swimwear & Beachwear,Womens
+One-piece swimsuit,Swimwear & Beachwear,Womens
+Tankini,Swimwear & Beachwear,Womens
+Swim briefs,Swimwear & Beachwear,Mens
+Swim trunks,Swimwear & Beachwear,Mens
+Board shorts,Swimwear & Beachwear,Mens
+Rash guard top,Swimwear & Beachwear,Unisex
+Swim dress,Swimwear & Beachwear,Womens
+Cover-up,Swimwear & Beachwear,Womens
+Sarong,Swimwear & Beachwear,Womens
+Kaftan,Swimwear & Beachwear,Womens
+Suit jacket,Formalwear,Mens
+Suit trousers,Formalwear,Mens
+Three-piece suit,Formalwear,Mens
+Tuxedo jacket,Formalwear,Mens
+Tuxedo trousers,Formalwear,Mens
+Tuxedo shirt,Formalwear,Mens
+Dress shirt,Formalwear,Mens
+Dress waistcoat,Formalwear,Mens
+Evening dress,Formalwear,Womens
+Ball gown,Formalwear,Womens
+Formal skirt,Formalwear,Womens
+Tailored jumpsuit,Formalwear,Womens
+Work shirt,Workwear & Uniforms,Unisex
+Work trousers,Workwear & Uniforms,Unisex
+Hi-vis jacket,Workwear & Uniforms,Unisex
+Coveralls,Workwear & Uniforms,Unisex
+Scrubs top,Workwear & Uniforms,Unisex
+Scrubs trousers,Workwear & Uniforms,Unisex
+Chef jacket,Workwear & Uniforms,Unisex
+Lab coat,Workwear & Uniforms,Unisex
+School blazer,Workwear & Uniforms,Unisex
+School trousers,Workwear & Uniforms,Unisex
+School skirt,Workwear & Uniforms,Womens
+Security uniform shirt,Workwear & Uniforms,Unisex
+Maternity jeans,Maternity,Womens
+Maternity leggings,Maternity,Womens
+Maternity dress,Maternity,Womens
+Maternity top,Maternity,Womens
+Nursing bra,Maternity,Womens
+Sari,Traditional & Costume,Womens
+Kimono,Traditional & Costume,Unisex
+Hanbok dress,Traditional & Costume,Womens
+Hanbok jacket,Traditional & Costume,Unisex
+Abaya,Traditional & Costume,Womens
+Thobe,Traditional & Costume,Mens
+Dirndl,Traditional & Costume,Womens
+Lederhosen,Traditional & Costume,Mens
+Kilt,Traditional & Costume,Mens
+Costume dress,Traditional & Costume,Womens
+Costume jumpsuit,Traditional & Costume,Unisex
+Cosplay outfit,Traditional & Costume,Unisex
+Baseball cap,Accessories,Unisex
+Beanie,Accessories,Unisex
+Bucket hat,Accessories,Unisex
+Scarf,Accessories,Unisex
+Gloves,Accessories,Unisex
+Belt,Accessories,Unisex
+Tie,Accessories,Mens
+Bow tie,Accessories,Mens
+Pocket square,Accessories,Mens
+Hair band,Accessories,Womens
+Headband,Accessories,Womens
+Headscarf,Accessories,Womens
+Trainers/Sneakers,Footwear,Unisex
+Running shoes,Footwear,Unisex
+Sandals,Footwear,Unisex
+Flip-flops,Footwear,Unisex
+Loafers,Footwear,Mens
+Oxfords,Footwear,Mens
+Derby shoes,Footwear,Mens
+Dress heels,Footwear,Womens
+Ankle boots,Footwear,Unisex
+Knee-high boots,Footwear,Womens
+Chelsea boots,Footwear,Unisex
+Slides,Footwear,Unisex
+Slippers,Footwear,Unisex

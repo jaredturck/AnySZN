@@ -1,0 +1,218 @@
+India,Asia
+China,Asia
+United States,North America
+Indonesia,Asia
+Pakistan,Asia
+Nigeria,Africa
+Brazil,South America
+Bangladesh,Asia
+Russia,Europe
+Mexico,North America
+Japan,Asia
+Philippines,Asia
+Democratic Republic of the Congo,Africa
+Ethiopia,Africa
+Egypt,Africa
+Vietnam,Asia
+Iran,Middle East
+Turkey,Middle East
+Germany,Europe
+United Kingdom,Europe
+France,Europe
+Tanzania,Africa
+Thailand,Asia
+South Africa,Africa
+Italy,Europe
+Kenya,Africa
+Colombia,South America
+Sudan,Africa
+Myanmar,Asia
+South Korea,Asia
+Spain,Europe
+Algeria,Africa
+Argentina,South America
+Iraq,Middle East
+Uganda,Africa
+Afghanistan,Asia
+Canada,North America
+Uzbekistan,Asia
+Poland,Europe
+Morocco,Africa
+Angola,Africa
+Saudi Arabia,Middle East
+Peru,South America
+Malaysia,Asia
+Mozambique,Africa
+Ghana,Africa
+Ukraine,Europe
+Yemen,Middle East
+Madagascar,Africa
+Ivory Coast,Africa
+Nepal,Asia
+Cameroon,Africa
+Venezuela,South America
+Australia,Oceania
+Niger,Africa
+Syria,Middle East
+North Korea,Asia
+Burkina Faso,Africa
+Taiwan,Asia
+Mali,Africa
+Sri Lanka,Asia
+Malawi,Africa
+Kazakhstan,Asia
+Chile,South America
+Zambia,Africa
+Somalia,Africa
+Chad,Africa
+Romania,Europe
+Senegal,Africa
+Netherlands,Europe
+Ecuador,South America
+Guatemala,Central America
+Cambodia,Asia
+Zimbabwe,Africa
+South Sudan,Africa
+Guinea,Africa
+Rwanda,Africa
+Benin,Africa
+Burundi,Africa
+Tunisia,Africa
+Belgium,Europe
+Haiti,Caribbean
+Jordan,Middle East
+Bolivia,South America
+United Arab Emirates,Middle East
+Czech Republic,Europe
+Dominican Republic,Caribbean
+Portugal,Europe
+Sweden,Europe
+Tajikistan,Asia
+Greece,Europe
+Azerbaijan,Asia
+Papua New Guinea,Oceania
+Israel,Middle East
+Honduras,Central America
+Cuba,Caribbean
+Hungary,Europe
+Austria,Europe
+Belarus,Europe
+Switzerland,Europe
+Sierra Leone,Africa
+Togo,Africa
+Laos,Asia
+Hong Kong (China),Asia
+Libya,Africa
+Kyrgyzstan,Asia
+Turkmenistan,Asia
+Nicaragua,Central America
+Serbia,Europe
+Central African Republic,Africa
+Bulgaria,Europe
+Republic of the Congo,Africa
+Singapore,Asia
+Paraguay,South America
+El Salvador,Central America
+Denmark,Europe
+Finland,Europe
+Norway,Europe
+Lebanon,Middle East
+Palestine,Middle East
+Ireland,Europe
+Slovakia,Europe
+Oman,Middle East
+New Zealand,Oceania
+Liberia,Africa
+Costa Rica,Central America
+Mauritania,Africa
+Kuwait,Middle East
+Panama,Central America
+Croatia,Europe
+Georgia,Asia
+Eritrea,Africa
+Mongolia,Asia
+Uruguay,South America
+Bosnia and Herzegovina,Europe
+Puerto Rico (US),Caribbean
+Qatar,Middle East
+Armenia,Asia
+Namibia,Africa
+Lithuania,Europe
+Jamaica,Caribbean
+Gabon,Africa
+Gambia,Africa
+Moldova,Europe
+Albania,Europe
+Botswana,Africa
+Slovenia,Europe
+Lesotho,Africa
+Latvia,Europe
+North Macedonia,Europe
+Guinea-Bissau,Africa
+Equatorial Guinea,Africa
+Bahrain,Middle East
+Kosovo,Europe
+Timor-Leste,Asia
+Estonia,Europe
+Trinidad and Tobago,Caribbean
+Mauritius,Africa
+Eswatini,Africa
+Djibouti,Africa
+Cyprus,Europe
+Comoros,Africa
+Fiji,Oceania
+Bhutan,Asia
+Guyana,South America
+Solomon Islands,Oceania
+Macau (China),Asia
+Luxembourg,Europe
+Montenegro,Europe
+Suriname,South America
+Western Sahara (disputed),Africa
+Malta,Europe
+Maldives,Asia
+Cape Verde,Africa
+Northern Cyprus,Europe
+Brunei,Asia
+Belize,Central America
+Bahamas,Caribbean
+Iceland,Europe
+Transnistria,Europe
+Vanuatu,Oceania
+French Polynesia (France),Oceania
+Barbados,Caribbean
+New Caledonia (France),Oceania
+Abkhazia,Asia
+São Tomé and Príncipe,Africa
+Samoa,Oceania
+Saint Lucia,Caribbean
+Curaçao (Netherlands),Caribbean
+Guam (US),Oceania
+Seychelles,Africa
+Kiribati,Oceania
+Saint Vincent and the Grenadines,Caribbean
+Grenada,Caribbean
+Aruba (Netherlands),Caribbean
+Micronesia,Oceania
+Antigua and Barbuda,Caribbean
+Jersey (UK),Europe
+Tonga,Oceania
+Andorra,Europe
+U.S. Virgin Islands (US),Caribbean
+Cayman Islands (UK),Caribbean
+Isle of Man (UK),Europe
+Dominica,Caribbean
+Guernsey (UK),Europe
+Bermuda (UK),North America
+Greenland (Denmark),North America
+South Ossetia,Asia
+Faroe Islands (Denmark),Europe
+Saint Kitts and Nevis,Caribbean
+Turks and Caicos Islands (UK),Caribbean
+American Samoa (US),Oceania
+Northern Mariana Islands (US),Oceania
+Marshall Islands,Oceania
+Liechtenstein,Europe
+Monaco,Europe
+Gibraltar (UK),Europe
+San Marino,Europe

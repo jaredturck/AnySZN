@@ -1,0 +1,250 @@
+@use '_vars' as vars;
+
+@mixin font-face($family, $file, $weight, $style: normal) {
+    font-family: $family;
+    src: url($file) format('truetype');
+    font-weight: $weight;
+    font-style: $style;
+    font-display: swap;
+}
+
+@mixin dark-section($padding, $margin: null) {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: vars.$pure-black;
+    color: #ffffff;
+    padding: $padding;
+    @if $margin != null {
+        margin: $margin;
+    }
+}
+
+@mixin underline-after($height: 1px, $bottom: -0.15rem, $bg: currentColor, $duration: 0.2s) {
+    position: relative;
+
+    &::after {
+        content: "";
+        position: absolute;
+        left: 0;
+        bottom: $bottom;
+        width: 0;
+        height: $height;
+        background-color: $bg;
+        transition: width $duration ease;
+    }
+}
+
+@mixin hover-state($transform, $shadow: null, $opacity: null, $bg: null, $filter: null, $color: null) {
+    &:hover {
+        transform: $transform;
+
+        @if $shadow != null { box-shadow: $shadow; }
+        @if $opacity != null { opacity: $opacity; }
+        @if $bg != null { background-color: $bg; }
+        @if $filter != null { filter: $filter; }
+        @if $color != null { color: $color; }
+    }
+}
+
+@mixin icon-hover($size, $dur: 0.2s, $scale: 1.1, $hover-opacity: 0.85) {
+    width: $size;
+    height: $size;
+    object-fit: contain;
+    cursor: pointer;
+    transition: transform $dur ease, opacity $dur ease;
+
+    &:hover {
+        transform: scale($scale);
+        opacity: $hover-opacity;
+    }
+}
+
+@mixin title-stack($mb) {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin-bottom: $mb;
+}
+
+@mixin caps-text($size, $spacing, $color, $weight: null) {
+    font-size: $size;
+    letter-spacing: $spacing;
+    text-transform: uppercase;
+    color: $color;
+    @if $weight != null {
+        font-weight: $weight;
+    }
+}
+
+@mixin panel-surface($radius,$bg,$border,$shadow1,$shadow2: null,$color: #f5f5f5,$overflow: hidden,$position: relative) {
+    position: $position;
+    border-radius: $radius;
+    background: $bg;
+    border: $border;
+    color: $color;
+    overflow: $overflow;
+
+    @if $shadow2 == null {
+        box-shadow: $shadow1;
+    } @else {
+        box-shadow: $shadow1, $shadow2;
+    }
+}
+
+@mixin round-flex($size, $bg: null, $color: null, $shadow: null) {
+    width: $size;
+    height: $size;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    @if $bg != null { background: $bg; }
+    @if $color != null { color: $color; }
+    @if $shadow != null { box-shadow: $shadow; }
+}
+
+@mixin link-border-hover($color, $hoverBorder) {
+    color: $color;
+    text-decoration: none;
+    border-bottom: 1px solid transparent;
+    transition: border-color 0.18s ease, color 0.18s ease;
+
+    &:hover {
+        border-color: $hoverBorder;
+    }
+}
+
+@mixin link-underline-opacity-hover($color, $hoverOpacity: 0.75, $fontWeight: null) {
+    color: $color;
+    text-decoration: none;
+    transition: opacity 0.16s ease;
+
+    @if $fontWeight != null {
+        font-weight: $fontWeight;
+    }
+
+    &:hover {
+        opacity: $hoverOpacity;
+        text-decoration: underline;
+    }
+}
+
+@mixin pill-tag($bg, $color, $pad: 0.1rem 0.55rem, $radius: 999px) {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: $pad;
+    border-radius: $radius;
+    background: $bg;
+    color: $color;
+}
+
+@mixin card-surface($radius,$bg,$border,$shadow1,$shadow2: null,$position: null,$overflow: null) {
+    border-radius: $radius;
+    background: $bg;
+    border: $border;
+
+    @if $shadow2 == null {
+        box-shadow: $shadow1;
+    } @else {
+        box-shadow: $shadow1, $shadow2;
+    }
+
+    @if $position != null {
+        position: $position;
+    }
+    @if $overflow != null {
+        overflow: $overflow;
+    }
+}
+
+@mixin glow-before($inset, $bg, $opacity: 0.7) {
+    &::before {
+        content: "";
+        position: absolute;
+        inset: $inset;
+        background: $bg;
+        opacity: $opacity;
+        mix-blend-mode: screen;
+        pointer-events: none;
+    }
+}
+
+@mixin gradient-pill-cta($borderColor,$gradient,$textColor,$shadowBase,$shadowHover,$shadowActive,$bgSize: 180% 100%) {
+    padding: 0.55rem 1.15rem;
+    border-radius: 999px;
+    font-size: 0.85rem;
+    font-weight: 600;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    text-decoration: none;
+    border: 1px solid $borderColor;
+    background: $gradient;
+    color: $textColor;
+    box-shadow: $shadowBase;
+    transition:
+        transform 0.15s ease,
+        box-shadow 0.15s ease,
+        background-position 0.25s ease;
+
+    background-size: $bgSize;
+
+    &:hover {
+        transform: translateY(-1px);
+        background-position: 100% 0;
+        box-shadow: $shadowHover;
+    }
+
+    &:active {
+        transform: translateY(0);
+        box-shadow: $shadowActive;
+    }
+}
+
+@mixin lime-link-underline($color: #ccff33) {
+    text-decoration: none;
+    color: $color;
+
+    &:hover {
+        text-decoration: underline;
+    }
+}
+
+@mixin focus-visible-ring($ringColor, $radius: null) {
+    &:focus-visible {
+        outline: none;
+        box-shadow: 0 0 0 2px $ringColor;
+
+        @if $radius != null {
+            border-radius: $radius;
+        }
+    }
+}
+
+@mixin bundle-control-btn($size, $radius: 999px) {
+    width: $size;
+    height: $size;
+    border-radius: $radius;
+    border: none;
+    background: transparent;
+    cursor: pointer;
+    line-height: 1;
+}
+
+@mixin pill-surface($pad, $bg, $border, $radius: 999px) {
+    padding: $pad;
+    border-radius: $radius;
+    background: $bg;
+    border: $border;
+}
+
+@mixin bundle-action-btn($h: 46px, $radius: 12px) {
+    height: $h;
+    border-radius: $radius;
+    cursor: pointer;
+    font-weight: 900;
+    letter-spacing: 0.01em;
+}

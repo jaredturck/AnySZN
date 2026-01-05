@@ -1,0 +1,9 @@
+@use '_mixins' as mixins;
+
+@font-face {
+    @include mixins.font-face('Lato', '../fonts/Lato/Lato-Regular.ttf', 400);
+}
+
+@font-face {
+    @include mixins.font-face('Lato', '../fonts/Lato/Lato-Bold.ttf', 700);
+}

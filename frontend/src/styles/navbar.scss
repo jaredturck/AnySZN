@@ -1,0 +1,72 @@
+@use '_vars' as variables;
+@use '_mixins' as mixins;
+
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 1rem;
+    background-color: variables.$pure-black;
+    padding: 0px 1.5rem;
+    min-height: 4rem;
+    height: fit-content;
+    border-radius: 0.625rem;
+    position: absolute;
+    top: 1rem;
+    left: 1rem;
+    width: calc(100% - 5rem);
+    z-index: 100;
+
+    &__left {
+        display: flex;
+        align-items: center;
+    }
+
+    &__logo-link {
+        display: inline-flex;
+        align-items: center;
+    }
+
+    &__logo {
+        display: block;
+        height: 2.5rem;
+        transition: transform 0.25s ease;
+        @include mixins.hover-state(scale(1.03));
+    }
+
+    &__middle {
+        display: flex;
+        align-items: center;
+        gap: 1.5rem;
+    }
+
+    &__link {
+        font-size: 0.875rem;
+        text-decoration: none;
+        color: #ffffff;
+        cursor: pointer;
+        transition: color 0.2s ease;
+        @include mixins.underline-after(2px, -0.25rem, variables.$accent-color, 0.2s);
+
+        &:hover,
+        &--selected {
+            color: variables.$accent-color;
+        }
+
+        &:hover::after,
+        &--selected::after {
+            width: 100%;
+        }
+    }
+
+    &__right {
+        display: flex;
+        align-items: center;
+        gap: 2rem;
+    }
+
+    &__icon {
+        @include mixins.icon-hover(1.25rem, 0.2s, 1.1, 0.85);
+    }
+}

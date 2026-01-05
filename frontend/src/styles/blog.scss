@@ -1,0 +1,78 @@
+@use '_vars' as vars;
+@use '_mixins' as mixins;
+
+.blog {
+    margin-top: 1.5rem;
+
+    &__list {
+        display: flex;
+        flex-direction: column;
+        gap: 1.25rem;
+    }
+}
+
+.blog-card {
+    padding: 1.4rem 1.6rem 1.6rem;
+
+    @include mixins.card-surface(
+        1.1rem,
+        radial-gradient(circle at top left, #181818 0, #050505 70%),
+        1px solid #262626,
+        0 18px 40px rgba(0, 0, 0, 0.8),
+        null,
+        relative,
+        hidden
+    );
+
+    @include mixins.glow-before(-20%, radial-gradient(circle at 0% 0%, rgba(vars.$accent-color, 0.12), transparent 55%), 0.7);
+
+    &__header,
+    &__excerpt {
+        position: relative;
+        z-index: 1;
+    }
+
+    &__meta {
+        display: flex;
+        align-items: center;
+        gap: 0.6rem;
+        margin-bottom: 0.4rem;
+        font-size: 0.72rem;
+        text-transform: uppercase;
+        letter-spacing: 0.13em;
+    }
+
+    &__tag {
+        padding: 0.16rem 0.5rem;
+        border-radius: 999px;
+        background: rgba(vars.$accent-color, 0.06);
+        border: 1px solid rgba(vars.$accent-color, 0.25);
+        color: #a5c44a;
+        font-weight: 500;
+    }
+
+    &__date {
+        color: #777;
+    }
+
+    &__title {
+        margin: 0 0 0.35rem;
+        font-size: 1.28rem;
+        font-weight: 650;
+        color: vars.$accent-color;
+        letter-spacing: 0.01em;
+    }
+
+    &__subtitle {
+        margin: 0 0 0.85rem;
+        font-size: 0.95rem;
+        color: #c1c1c1;
+    }
+
+    &__excerpt {
+        margin: 0;
+        font-size: 0.95rem;
+        line-height: 1.6;
+        color: #d8d8d8;
+    }
+}

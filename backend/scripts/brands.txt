@@ -1,0 +1,29 @@
+Amazon Fashion,https://www.amazon.co.uk/fashion,unisex
+Shein,https://www.shein.co.uk,unisex
+ASOS,https://www.asos.com,unisex
+Boohoo,https://www.boohoo.com,unisex
+Debenhams,https://www.debenhams.com,unisex
+Next,https://www.next.co.uk,unisex
+Marks & Spencer,https://www.marksandspencer.com,unisex
+Very,https://www.very.co.uk,unisex
+George at Asda,https://direct.asda.com/george,unisex
+F&F (Tesco),https://www.tesco.com/clothing,unisex
+Tu Clothing (Sainsbury's),https://tuclothing.sainsburys.co.uk,unisex
+New Look,https://www.newlook.com/uk,unisex
+H&M,https://www2.hm.com/en_gb/index.html,unisex
+Zara,https://www.zara.com/uk,unisex
+Primark,https://www.primark.com/en-gb,unisex
+JD Sports,https://www.jdsports.co.uk,unisex
+Sports Direct,https://www.sportsdirect.com,unisex
+John Lewis,https://www.johnlewis.com,unisex
+Zalando,https://www.zalando.co.uk,unisex
+Topshop,https://www.topshop.com,womens
+River Island,https://www.riverisland.com,unisex
+Missguided,https://www.missguided.co.uk,womens
+PrettyLittleThing,https://www.prettylittlething.com,womens
+Farfetch,https://www.farfetch.com/uk,unisex
+Gymshark,https://uk.gymshark.com,unisex
+Reiss,https://www.reiss.com/gb,unisex
+AllSaints,https://www.allsaints.com,unisex
+Nike,https://www.nike.com/gb,unisex
+Adidas,https://www.adidas.co.uk,unisex
