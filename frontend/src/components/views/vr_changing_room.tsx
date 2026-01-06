@@ -1,5 +1,5 @@
-import banner1 from "../../imgs/banners/vr_changing_room.jpg";
-import vrChangingRoomImage from "../../imgs/banners/vr_changing_room_img1.jpg";
+import banner1 from "../../imgs/banners/vr_changing_room.png";
+import vrChangingRoomImage from "../../imgs/banners/vr_changing_room_img1.png";
 import { ClothingBanner } from "../clothing_banner";
 import { GenericPageSection } from "./generic_text";
 

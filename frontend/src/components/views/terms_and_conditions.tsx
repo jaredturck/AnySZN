@@ -1,4 +1,4 @@
-import banner1 from "../../imgs/banners/terms_and_conditions.jpg";
+import banner1 from "../../imgs/banners/terms_and_conditions.png";
 import { ClothingBanner } from "../clothing_banner";
 import { GenericPageSection } from "./generic_text";
 

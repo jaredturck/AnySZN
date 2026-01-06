@@ -1,4 +1,4 @@
-import banner1 from "../../imgs/banners/shipping.avif";
+import banner1 from "../../imgs/banners/shipping.png";
 import { ClothingBanner } from "../clothing_banner";
 import { GenericPageSection } from "./generic_text";
 
