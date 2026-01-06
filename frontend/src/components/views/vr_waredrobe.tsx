@@ -66,7 +66,7 @@ export function VRWardrobe() {
                 <p>
                     Our developers are currently working hard to bring VR Wardrobe to life and integrate it
                     seamlessly into our mobile app. This feature is still in development and not yet
-                    available to use, but it’s a key part of our long-term vision for AnySzn.
+                    available to use, but it’s a key part of our long-term vision for AnyHJS.
                 </p>
 
                 <p>

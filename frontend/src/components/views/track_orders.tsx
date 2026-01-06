@@ -18,7 +18,7 @@ export function TrackMyOrder() {
                 subtitle="We partner with several couriers. Use the tracking number from your dispatch email and choose the matching courier below."
             >
                 <p>
-                    Your shipping confirmation email from AnySzn will show the{" "}
+                    Your shipping confirmation email from AnyHJS will show the{" "}
                     <strong>courier name</strong> (for example Royal Mail, DHL or FedEx) and
                     a <strong>tracking number</strong>. Select the correct courier below and
                     we’ll send you straight to their tracking page.
@@ -91,7 +91,7 @@ export function TrackMyOrder() {
 
                     <p className="track-order__footer">
                         Can&apos;t see which courier was used? Check your shipping
-                        confirmation email from AnySzn – it includes the courier name
+                        confirmation email from AnyHJS – it includes the courier name
                         and tracking number for your parcel.
                     </p>
                 </div>

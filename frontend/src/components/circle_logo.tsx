@@ -27,7 +27,7 @@ export function CircleLogo() {
                     <img
                         className="circle-logo__image"
                         src={logo_black1}
-                        alt="AnySzn logo"
+                        alt="AnyHJS logo"
                     />
                 </button>
             </div>

@@ -317,7 +317,7 @@ export function MyAccount({ auth, setAuth }: MyAccountProps) {
                             <div className="my-account__intro-text">
                                 <h1 className="my-account__heading">Account Overview</h1>
                                 <p>
-                                    Welcome back to <strong>AnySzn</strong>. From here you can keep an eye on
+                                    Welcome back to <strong>AnyHJS</strong>. From here you can keep an eye on
                                     your latest orders, update your personal details, get help when you need it
                                     and explore our AI-powered styling tools – all in one place.
                                 </p>
@@ -432,7 +432,7 @@ export function MyAccount({ auth, setAuth }: MyAccountProps) {
                                     <h3>Login &amp; email</h3>
                                     <p>
                                         Update the email you use to sign in and receive order updates from
-                                        AnySzn.
+                                        AnyHJS.
                                     </p>
                                     <Link to="/reset-email" className="my-account__card-link">
                                         Change email address
@@ -455,7 +455,7 @@ export function MyAccount({ auth, setAuth }: MyAccountProps) {
                                     <span className="my-account__tag">Need help?</span>
                                     <h3>Support Centre</h3>
                                     <p>
-                                        Browse FAQs, how-to guides and tips for shopping on AnySzn. If you
+                                        Browse FAQs, how-to guides and tips for shopping on AnyHJS. If you
                                         still need help, you can contact us directly from there.
                                     </p>
                                     <Link to="/support-centre" className="my-account__card-link">
@@ -522,7 +522,7 @@ export function MyAccount({ auth, setAuth }: MyAccountProps) {
                                     <h3>VR Wardrobe</h3>
                                     <p>
                                         Snap a photo of pieces you already own and let our AI build outfits
-                                        around them using items from AnySzn.
+                                        around them using items from AnyHJS.
                                     </p>
                                     <Link to="/vr-wardrobe" className="my-account__feature-link">
                                         Learn more

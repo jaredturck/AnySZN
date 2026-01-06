@@ -31,14 +31,14 @@ export function Blog() {
     return (
         <div>
             <ClothingBanner
-                title="AnySzn Blog"
+                title="AnyHJS Blog"
                 subtitle="News, drops and stories from the world of fashion and tech."
                 img_src={banner1}
             />
 
             <GenericPageSection
                 label="Stories"
-                title="Latest from AnySzn"
+                title="Latest from AnyHJS"
                 subtitle="Catch up on trends, collabs and product updates from across the platform."
             >
                 <div className="blog">

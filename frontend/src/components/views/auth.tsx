@@ -67,7 +67,7 @@ export function Login({ setAuth, auth }: LoginProps) {
                     <div className="auth-form">
                         <div className="auth-form__header">
                             <p className="auth-form__hint">
-                                You’re currently signed in to AnySzn.
+                                You’re currently signed in to AnyHJS.
                             </p>
                         </div>
                         <Link to="/account" className="auth-form__submit login">
@@ -142,7 +142,7 @@ export function Login({ setAuth, auth }: LoginProps) {
                 <form className="auth-form" onSubmit={handleSubmit}>
                     <div className="auth-form__header">
                         <p className="auth-form__hint">
-                            Use the email address or username you registered with AnySzn.
+                            Use the email address or username you registered with AnyHJS.
                         </p>
                     </div>
 
@@ -206,7 +206,7 @@ export function Login({ setAuth, auth }: LoginProps) {
                     </button>
 
                     <p className="auth-form__footer">
-                        New to AnySzn?{" "}
+                        New to AnyHJS?{" "}
                         <Link to="/register" className="auth-form__footer-link">
                             Create an account
                         </Link>
@@ -280,13 +280,13 @@ export function Register({ setAuth }: RegisterProps) {
         <div className="padding-top-4rem auth-page">
             <GenericPageSection
                 label="Account"
-                title="Join AnySzn Today"
+                title="Join AnyHJS Today"
                 subtitle="Save your favourites, track orders and unlock personalised outfits."
             >
                 <form className="auth-form" onSubmit={handleSubmit}>
                     <div className="auth-form__header">
                         <p className="auth-form__hint">
-                            Fill in your details below to get started with AnySzn.
+                            Fill in your details below to get started with AnyHJS.
                         </p>
                     </div>
 
@@ -404,12 +404,12 @@ export function ForgotPassword() {
             <GenericPageSection
                 label="Account"
                 title="Reset Your Password"
-                subtitle="Enter the email linked to your AnySzn account and we’ll send you a reset link."
+                subtitle="Enter the email linked to your AnyHJS account and we’ll send you a reset link."
             >
                 <form className="auth-form">
                     <div className="auth-form__header">
                         <p className="auth-form__hint">
-                            If there’s an AnySzn account associated with this email, you’ll receive a message
+                            If there’s an AnyHJS account associated with this email, you’ll receive a message
                             with a secure link to create a new password.
                         </p>
                     </div>
@@ -503,7 +503,7 @@ export function ResetEmail() {
             <GenericPageSection
                 label="Account"
                 title="Change Your Email Address"
-                subtitle="Update the primary email linked to your AnySzn account."
+                subtitle="Update the primary email linked to your AnyHJS account."
             >
                 <form className="auth-form">
                     <div className="auth-form__header">

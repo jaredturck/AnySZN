@@ -1,5 +1,5 @@
-# ANYSZN
-AnySzn is an AI-powered fashion marketplace and styling platform that transforms outfit inspiration into instant, shoppable looks across many brands. Discover the latest on-trend outfits, see how they’d look in them through virtual try-ons, and instantly shop complete looks.
+# ANYHJS
+AnyHJS is an AI-powered fashion marketplace and styling platform that transforms outfit inspiration into instant, shoppable looks across many brands. Discover the latest on-trend outfits, see how they’d look in them through virtual try-ons, and instantly shop complete looks.
 
 ## Frontend
 The frontend is built using react.js framework with typescript, the folder structure of `frontend/`:

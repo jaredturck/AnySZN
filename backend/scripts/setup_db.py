@@ -15,7 +15,7 @@ import datetime
 
 class SetupDB:
     def __init__(self):
-        self.data_path = '/home/jared/Documents/Dropdown Documents/ANYSZN/backend/scripts/'
+        self.data_path = '/home/jared/Documents/Dropdown Documents/ANYHJS/backend/scripts/'
     
     def add_groups(self):
         ''' Add groups to the database '''
@@ -33,8 +33,7 @@ class SetupDB:
         ''' Add users to the database '''
 
         admins = [
-            ['jared', 'Jared', 'Turck', 'Anyszn1234!', True, True, 'jaredturck8@gmail.com'],
-            ['ayomide', 'Ayomide', 'Adebanji', 'Anyszn1234!', True, True, 'ayomide@anyszn.com']
+            ['jared', 'Jared', 'Turck', 'AnyHJS1234!', True, True, 'jaredturck8@gmail.com'],
         ]
 
         for name, first_name, last_name, password, is_superuser, is_staff, email in admins:
@@ -103,9 +102,7 @@ class SetupDB:
         ''' Add contacts from CSV file to the database '''
         
         user_jared = User.objects.get(username='jared')
-        user_ayomide = User.objects.get(username='ayomide')
         Contact.objects.get_or_create(first_name = 'Jared', last_name = 'Turck', email = 'jaredturck8@gmail.com', phone = None, user = user_jared)
-        Contact.objects.get_or_create(first_name = 'Ayomide', last_name = 'Adebanji', email = 'ayomide@anyszn.com', phone = None, user = user_ayomide)
 
 if __name__ == '__main__':
     db = SetupDB()

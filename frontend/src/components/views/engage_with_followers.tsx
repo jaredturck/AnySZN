@@ -7,20 +7,20 @@ export function EngageWithFollowers() {
     return (
         <div>
             <ClothingBanner
-                title="Engage with AnySzn"
+                title="Engage with AnyHJS"
                 subtitle="Follow, connect and be part of the community"
                 img_src={banner1}
             />
 
             <GenericPageSection
                 label="Community"
-                title="Engage with AnySzn"
+                title="Engage with AnyHJS"
                 subtitle="Discover all the ways you can follow, contact and connect with us across our social channels."
             >
-                <h1>Engage with AnySzn</h1>
+                <h1>Engage with AnyHJS</h1>
 
                 <p>
-                    At AnySzn, fashion is a conversation. We’re more than just a place to shop – we’re a
+                    At AnyHJS, fashion is a conversation. We’re more than just a place to shop – we’re a
                     community of style lovers, creators and brands from all over the world. Follow us, talk
                     to us, and stay up to date with the latest drops, trends and outfit ideas across all of
                     our social media channels.
@@ -36,7 +36,7 @@ export function EngageWithFollowers() {
                 <figure>
                     <img
                         src={engageImage}
-                        alt="AnySzn community and social media banner"
+                        alt="AnyHJS community and social media banner"
                         style={{ width: "100%", borderRadius: "12px" }}
                     />
                 </figure>
@@ -46,7 +46,7 @@ export function EngageWithFollowers() {
                 <h2>Connect with Us on Social Media</h2>
 
                 <p>
-                    Follow AnySzn on your favourite platforms to see the latest fashion trends, outfit
+                    Follow AnyHJS on your favourite platforms to see the latest fashion trends, outfit
                     inspiration, behind-the-scenes content, and community spotlights. Join the conversation,
                     tag us in your looks, and let us know what you want to see more of.
                 </p>
@@ -62,37 +62,37 @@ export function EngageWithFollowers() {
                     <tbody>
                         <tr>
                             <td>Instagram</td>
-                            <td>@AnySzn (placeholder)</td>
+                            <td>@AnyHJS (placeholder)</td>
                             <td>Daily outfit inspiration, drops, styling reels and community features.</td>
                         </tr>
                         <tr>
                             <td>TikTok</td>
-                            <td>@AnySzn (placeholder)</td>
+                            <td>@AnyHJS (placeholder)</td>
                             <td>Short-form styling tips, trend breakdowns and behind-the-scenes content.</td>
                         </tr>
                         <tr>
                             <td>YouTube</td>
-                            <td>AnySzn (placeholder)</td>
+                            <td>AnyHJS (placeholder)</td>
                             <td>Long-form lookbooks, styling guides, interviews and fashion deep dives.</td>
                         </tr>
                         <tr>
                             <td>Pinterest</td>
-                            <td>@AnySzn (placeholder)</td>
+                            <td>@AnyHJS (placeholder)</td>
                             <td>Curated moodboards, outfit boards and seasonal trend collections.</td>
                         </tr>
                         <tr>
                             <td>Twitter / X</td>
-                            <td>@AnySzn (placeholder)</td>
+                            <td>@AnyHJS (placeholder)</td>
                             <td>Real-time updates, news, drops and quick community chats.</td>
                         </tr>
                         <tr>
                             <td>Discord</td>
-                            <td>AnySzn Community (placeholder)</td>
+                            <td>AnyHJS Community (placeholder)</td>
                             <td>Chat with other members, share outfits, vote on future features and drops.</td>
                         </tr>
                         <tr>
                             <td>Snapchat</td>
-                            <td>AnySzn (placeholder)</td>
+                            <td>AnyHJS (placeholder)</td>
                             <td>Quick sneak peeks, early looks and exclusive behind-the-scenes moments.</td>
                         </tr>
                         <tr>
@@ -110,7 +110,7 @@ export function EngageWithFollowers() {
 
                 <hr />
 
-                <h2>Why Engage with AnySzn?</h2>
+                <h2>Why Engage with AnyHJS?</h2>
 
                 <p>
                     Our community is at the heart of everything we do. By engaging with us online, you’ll be
@@ -145,7 +145,7 @@ export function EngageWithFollowers() {
                 </p>
 
                 <p>
-                    Join the AnySzn community today, follow us online, and be part of the future of fashion.
+                    Join the AnyHJS community today, follow us online, and be part of the future of fashion.
                 </p>
             </GenericPageSection>
         </div>

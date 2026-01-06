@@ -33,7 +33,7 @@ export function Footer() {
             <div className="Footer__main">
                 <section className="Footer__social">
                     <h2 className="Footer__social-title">
-                        JOIN MILLIONS OF ANYSZN MEMBERS ON SOCIAL
+                        JOIN MILLIONS OF ANYHJS MEMBERS ON SOCIAL
                     </h2>
                     <div className="Footer__social-icons">
                         <Link to="https://www.instagram.com/" target="_blank">
@@ -84,7 +84,7 @@ export function Footer() {
                     </div>
                     <div className="Footer__links-column Footer__links-column--download">
                         <h3 className="Footer__links-heading">
-                            Download the ANYSZN app and unlock:
+                            Download the ANYHJS app and unlock:
                         </h3>
                         <div className="Footer__download-grid">
                             <ul className="Footer__download-list Footer__download-list--left">
@@ -172,14 +172,14 @@ export function Footer() {
                         <Link to="/payment-methods"><img className="Footer__payments-logo" src={payment_link_13} alt="" /></Link>
                     </div>
                     <div className="Footer__payments-links">
-                        <Link className="Footer__payments-link" to="/cookie-policy">ANYSZN Cookie Policy</Link>
+                        <Link className="Footer__payments-link" to="/cookie-policy">ANYHJS Cookie Policy</Link>
                         <Link className="Footer__payments-link" to="/privacy-policy">Privacy Policy</Link>
                         <Link className="Footer__payments-link" to="/terms-and-conditions">Terms Of Service</Link>
                     </div>
                 </section>
             </div>
             <div className="Footer__copyright">
-                © 2024 ANYSZN All Rights Reserved
+                © 2024 ANYHJS All Rights Reserved
             </div>
         </footer>
     );

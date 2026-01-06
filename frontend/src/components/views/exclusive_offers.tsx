@@ -14,12 +14,12 @@ export function ExclusiveOffers() {
             <GenericPageSection
                 label="Offers"
                 title="Exclusive Offers & Rewards"
-                subtitle="Learn how loyalty, bulk orders and community engagement can unlock extra savings at AnySzn."
+                subtitle="Learn how loyalty, bulk orders and community engagement can unlock extra savings at AnyHJS."
             >
                 <h1>Exclusive Offers &amp; Rewards</h1>
 
                 <p>
-                    At AnySzn, we believe loyal customers and active supporters deserve something extra.
+                    At AnyHJS, we believe loyal customers and active supporters deserve something extra.
                     Whether you’ve been with us from the beginning, are placing a big order, or help spread
                     the word on social media, our exclusive offers are designed to thank you with real
                     savings on the brands you love – from Nike and Adidas to hundreds of other labels.
@@ -130,14 +130,14 @@ export function ExclusiveOffers() {
                 <h2>Social &amp; Influencer Perks – Get Rewarded for Sharing</h2>
 
                 <p>
-                    AnySzn is a social-first brand, and we’re grateful to everyone who helps spread the
-                    word. If you share your AnySzn outfits, review us publicly or introduce our platform to
+                    AnyHJS is a social-first brand, and we’re grateful to everyone who helps spread the
+                    word. If you share your AnyHJS outfits, review us publicly or introduce our platform to
                     your audience, we want to say thanks.
                 </p>
 
                 <ul>
                     <li>
-                        <strong>Share &amp; Save:</strong> From time to time, we run campaigns where posting your AnySzn fit and tagging us can unlock one-off discount codes.
+                        <strong>Share &amp; Save:</strong> From time to time, we run campaigns where posting your AnyHJS fit and tagging us can unlock one-off discount codes.
                     </li>
                     <li>
                         <strong>Referral Rewards:</strong> Invite friends using your unique referral link. When they place their first order, they get a discount – and you receive a reward too.
@@ -160,13 +160,13 @@ export function ExclusiveOffers() {
                 <p>
                     Our exclusive offers and reward levels may change over time as we add new brands,
                     features and campaigns. For the most accurate and up-to-date information, always check
-                    your account area, your email inbox for AnySzn updates, and the promotions shown at
+                    your account area, your email inbox for AnyHJS updates, and the promotions shown at
                     checkout.
                 </p>
 
                 <p>
                     However you choose to shop – regularly, in bulk or as part of our social community –
-                    we’re committed to making sure you feel valued and rewarded at AnySzn.
+                    we’re committed to making sure you feel valued and rewarded at AnyHJS.
                 </p>
             </GenericPageSection>
         </div>

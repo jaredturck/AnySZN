@@ -6,20 +6,20 @@ export function Collabs() {
     return (
         <div>
             <ClothingBanner
-                title="Collaborate with AnySzn"
+                title="Collaborate with AnyHJS"
                 subtitle="Partner, create and sell with our multi-brand fashion platform"
                 img_src={banner1}
             />
 
             <GenericPageSection
                 label="Collaboration"
-                title="Collaborate with AnySzn"
+                title="Collaborate with AnyHJS"
                 subtitle="Information for influencers, brands, designers and sellers who want to work with us."
             >
-                <h1>Collaborate with AnySzn</h1>
+                <h1>Collaborate with AnyHJS</h1>
 
                 <p>
-                    At AnySzn, we’re building more than a store – we’re creating a connected fashion
+                    At AnyHJS, we’re building more than a store – we’re creating a connected fashion
                     ecosystem. From global brands like Nike and Adidas to emerging designers, fashion
                     students and independent resellers, our goal is to bring the entire style community
                     together in one place. If you’re interested in collaborating, advertising or selling
@@ -33,7 +33,7 @@ export function Collabs() {
                 <p>
                     Are you a fashion creator, stylist or content producer with an engaged audience on
                     Instagram, TikTok, YouTube or other platforms? We’d love to work with you. As a
-                    multi-brand hub, AnySzn gives you a single place to showcase complete outfits from
+                    multi-brand hub, AnyHJS gives you a single place to showcase complete outfits from
                     hundreds of labels, making it easy for your followers to shop your looks in just a few
                     clicks.
                 </p>
@@ -51,7 +51,7 @@ export function Collabs() {
 
                 <p>
                     If you’re a fashion designer, brand owner or fashion student with your own pieces to
-                    showcase, AnySzn can help you connect with a wider audience. We already stock products
+                    showcase, AnyHJS can help you connect with a wider audience. We already stock products
                     from hundreds of established brands, and we’re actively exploring ways to highlight
                     unique, independent talent alongside them.
                 </p>
@@ -65,10 +65,10 @@ export function Collabs() {
 
                 <hr />
 
-                <h2>Marketplace: Sell Your Clothes Through AnySzn</h2>
+                <h2>Marketplace: Sell Your Clothes Through AnyHJS</h2>
 
                 <p>
-                    One of our major future features is the <strong>AnySzn Marketplace</strong> – a space
+                    One of our major future features is the <strong>AnyHJS Marketplace</strong> – a space
                     where anyone can list and sell clothing through our platform. Think of it as a
                     fashion-first marketplace where you can sell pre-loved items, custom pieces or small
                     batch designs, while we handle the heavy lifting.
@@ -116,7 +116,7 @@ export function Collabs() {
                             <td>Marketplace Selling (Coming Soon)</td>
                             <td>Independent sellers, resellers, individuals with clothes to sell</td>
                             <td>
-                                List items on AnySzn, we manage payments and logistics, you earn minus a small
+                                List items on AnyHJS, we manage payments and logistics, you earn minus a small
                                 commission.
                             </td>
                         </tr>
@@ -136,7 +136,7 @@ export function Collabs() {
                 <h2>How to Get in Touch</h2>
 
                 <p>
-                    If you’re interested in collaborating with AnySzn, we’d love to hear from you. There are
+                    If you’re interested in collaborating with AnyHJS, we’d love to hear from you. There are
                     several ways to reach out:
                 </p>
 
@@ -175,10 +175,10 @@ export function Collabs() {
 
                 <hr />
 
-                <h2>Join the AnySzn Community</h2>
+                <h2>Join the AnyHJS Community</h2>
 
                 <p>
-                    AnySzn is built on the idea that fashion is better when it’s shared. Whether you’re
+                    AnyHJS is built on the idea that fashion is better when it’s shared. Whether you’re
                     inspiring people with your outfits, designing your own collections, reselling pieces you
                     love, or planning a bigger campaign, our platform is here to help you reach more people
                     and make more impact.

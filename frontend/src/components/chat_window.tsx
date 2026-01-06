@@ -23,7 +23,7 @@ export function ChatWindow({ onClose }: ChatWindowProps) {
                 <div className="chat-window__content">
                     <div className="chat-window__logo-wrap">
                         <div className="chat-window__logo-circle">
-                            <span className="chat-window__logo-text">ANYSZN</span>
+                            <span className="chat-window__logo-text">ANYHJS</span>
                         </div>
                     </div>
 

@@ -30,7 +30,7 @@ export function Navbar({ auth }: NavbarProps) {
     <nav className="navbar">
       <div className="navbar__left">
         <NavLink to="/" className="navbar__logo-link" end>
-          <img className="navbar__logo" src={navbar_logo} alt="AnySzn logo" />
+          <img className="navbar__logo" src={navbar_logo} alt="AnyHJS logo" />
         </NavLink>
       </div>
       <div className="navbar__middle">

@@ -4,7 +4,7 @@ export function FeatureRoadmap() {
     return (
         <section className="FeatureRoadmap">
             <div className="FeatureRoadmap__title">
-                <h2 className="FeatureRoadmap__title-main">ANYSZN FEATURE ROADMAP</h2>
+                <h2 className="FeatureRoadmap__title-main">ANYHJS FEATURE ROADMAP</h2>
                 <p className="FeatureRoadmap__title-sub">(5-10 YEAR PLAN)</p>
             </div>
 
@@ -41,7 +41,7 @@ export function FeatureRoadmap() {
                 </div>
                 <div className="FeatureRoadmap__timeline-content">
                     <h3 className="FeatureRoadmap__timeline-content-title">
-                        Launch of AnySzn MVP
+                        Launch of AnyHJS MVP
                     </h3>
                     <ul className="FeatureRoadmap__timeline-content-list">
                         <li>Basic user onboarding and interface.</li>

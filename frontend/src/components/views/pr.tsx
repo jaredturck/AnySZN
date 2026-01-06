@@ -14,12 +14,12 @@ export function PR() {
             <GenericPageSection
                 label="Press"
                 title="Public Relations"
-                subtitle="Information for journalists, media outlets and partners who want to feature or speak with AnySzn."
+                subtitle="Information for journalists, media outlets and partners who want to feature or speak with AnyHJS."
             >
                 <h1>Public Relations</h1>
 
                 <p>
-                    AnySzn is an AI-driven fashion platform bringing together hundreds of global brands and
+                    AnyHJS is an AI-driven fashion platform bringing together hundreds of global brands and
                     independent creators into one connected shopping experience. From major names like Nike
                     and Adidas to emerging labels and resellers, we’re rethinking how people discover,
                     style and shop outfits online. Our focus on personalised recommendations, virtual try-on

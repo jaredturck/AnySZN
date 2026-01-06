@@ -1,6 +1,6 @@
 import '../../styles/about.scss';
 
-import bannerAbout from "../../imgs/main_banners/ANYSZN_About_Us_Banner.png";
+import bannerAbout from "../../imgs/main_banners/ANYHJS_About_Us_Banner.png";
 import about_img from '../../imgs/main_banners/About_us_Page_Image.png';
 
 import { ClothingBanner } from "../clothing_banner";
@@ -11,20 +11,20 @@ export function AboutUs() {
         <div>
             <ClothingBanner
                 title="Abous Us"
-                subtitle="Learn more about our mission to revolutionize the way you discover fashion with ANYSZN"
+                subtitle="Learn more about our mission to revolutionize the way you discover fashion with ANYHJS"
                 img_src={bannerAbout}
             />
 
             <GenericPageSection
                 label="About"
-                title="About AnySzn"
+                title="About AnyHJS"
                 subtitle="A next-generation, AI-driven fashion platform built around how people actually shop today."
             >
                 <section className="about">
                     <div className="about__intro">
                         <div className="about__intro-text">
                             <p>
-                                AnySzn is a next-generation fashion platform built for how people shop today. We bring together 
+                                AnyHJS is a next-generation fashion platform built for how people shop today. We bring together 
                                 hundreds of independent and emerging fashion brands into one seamless, AI-powered experience. Instead 
                                 of bouncing between dozens of websites, you can discover, style and shop full outfits in one place — 
                                 with the help of smart technology that actually understands fashion.
@@ -39,7 +39,7 @@ export function AboutUs() {
 
                         <div className="about__intro-media">
                             <div className="about__image">
-                                <img src={about_img} alt="AnySzn outfits" className="about__image-img" />
+                                <img src={about_img} alt="AnyHJS outfits" className="about__image-img" />
                             </div>
                             <p className="about__image-caption">
                                 One platform. Hundreds of brands. Endless ways to style your season.
@@ -69,7 +69,7 @@ export function AboutUs() {
                         <header className="about__section-header">
                             <h2>What We Do</h2>
                             <p>
-                                AnySzn is a multi-brand fashion marketplace built exclusively online. We focus on 
+                                AnyHJS is a multi-brand fashion marketplace built exclusively online. We focus on 
                                 clothing, bringing together products from hundreds of different brands and selling 
                                 them through a single, unified platform.
                             </p>
@@ -93,7 +93,7 @@ export function AboutUs() {
                             <div className="about__highlight-card">
                                 <h3 className="about__highlight-title">One basket. One checkout.</h3>
                                 <p className="about__highlight-text">
-                                    Mix brands. Build full looks. Check out once. AnySzn handles the rest behind the scenes.
+                                    Mix brands. Build full looks. Check out once. AnyHJS handles the rest behind the scenes.
                                 </p>
                             </div>
                         </div>
@@ -101,7 +101,7 @@ export function AboutUs() {
 
                     <section className="about__section">
                         <header className="about__section-header">
-                            <h2>AI at the Heart of AnySzn</h2>
+                            <h2>AI at the Heart of AnyHJS</h2>
                             <p>
                                 We're a heavily AI-focused company, and our products are built around intelligent systems 
                                 designed to help you make better style decisions — faster and with more confidence.
@@ -127,7 +127,7 @@ export function AboutUs() {
                                 <span className="about__feature-tag">Coming Soon</span>
                                 <h3>VR Wardrobe</h3>
                                 <p>
-                                    <strong>VR Wardrobe</strong> connects the clothes you already own with the options on AnySzn. 
+                                    <strong>VR Wardrobe</strong> connects the clothes you already own with the options on AnyHJS. 
                                     Snap a photo of a piece from your wardrobe and our AI analyses its colour, style and cut, then 
                                     recommends new items from our store that pair perfectly with it.
                                 </p>
@@ -153,7 +153,7 @@ export function AboutUs() {
 
                     <section className="about__section">
                         <header className="about__section-header">
-                            <h2>Why Shop with AnySzn?</h2>
+                            <h2>Why Shop with AnyHJS?</h2>
                         </header>
 
                         <div className="about__section-body about__section-body--two-col">
@@ -189,7 +189,7 @@ export function AboutUs() {
                         </header>
 
                         <p>
-                            AnySzn is still growing, and many of our most ambitious features — including AI Stylist, VR Wardrobe and 
+                            AnyHJS is still growing, and many of our most ambitious features — including AI Stylist, VR Wardrobe and 
                             VR Changing Room — are actively in development. As we expand, we'll continue to blend technology, 
                             creativity and community to make fashion more accessible, more enjoyable and more personal for everyone.
                         </p>
@@ -197,7 +197,7 @@ export function AboutUs() {
                         <p>
                             Whether you're here for a quick outfit refresh or to explore the future of AI-powered fashion, we're glad you've found us.
                         </p>
-                        <p>Welcome to AnySzn.</p>
+                        <p>Welcome to AnyHJS.</p>
                     </section>
                 </section>
             </GenericPageSection>

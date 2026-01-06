@@ -62,7 +62,7 @@ export function ContactUs() {
         <div className="padding-top-4rem auth-page">
             <GenericPageSection
                 label="Support"
-                title="Contact AnySzn"
+                title="Contact AnyHJS"
                 subtitle="Questions, feedback or style advice? Send us a message and we’ll be in touch."
             >
                 <form className="auth-form" onSubmit={handleSubmit}>

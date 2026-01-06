@@ -9,8 +9,8 @@ export function FeaturedOutfits() {
     return (
         <div className="FeaturedOutfits">
             <div className="FeaturedOutfits__title">
-                <h2 className="FeaturedOutfits__title-main">ANYSZN LOOKS GOOD ON YOU</h2>
-                <p className="FeaturedOutfits__title-sub">Tag @anyszn to be featured</p>
+                <h2 className="FeaturedOutfits__title-main">ANYHJS LOOKS GOOD ON YOU</h2>
+                <p className="FeaturedOutfits__title-sub">Tag @anyhjs to be featured</p>
             </div>
             <div className="FeaturedOutfits__gallery">
                 <div className="FeaturedOutfits__images">

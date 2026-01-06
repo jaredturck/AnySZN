@@ -20,7 +20,7 @@ export function HeroSection() {
                         </span>
                         <span className="hero__eyebrow-dot" aria-hidden="true">•</span>
                         <span className="hero__eyebrow-text">
-                            ANYSZN APP
+                            ANYHJS APP
                         </span>
                     </div>
 
