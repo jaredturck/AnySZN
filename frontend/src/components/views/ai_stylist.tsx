@@ -1,5 +1,5 @@
-import banner1 from "../../imgs/banners/ai_styelist.jpg";
-import aiStylistImage from "../../imgs/banners/ai_stylist_img1.avif";
+import banner1 from "../../imgs/banners/ai_styelist.png";
+import aiStylistImage from "../../imgs/banners/ai_stylist_img1.png";
 import { ClothingBanner } from "../clothing_banner";
 import { GenericPageSection } from "./generic_text";
 
