@@ -15,7 +15,7 @@ import datetime
 
 class SetupDB:
     def __init__(self):
-        self.data_path = '/home/jared/Documents/Dropdown Documents/ANYHJS/backend/scripts/'
+        self.data_path = '/home/jared/Documents/Dropdown Documents/AnyHJS/backend/scripts/'
     
     def add_groups(self):
         ''' Add groups to the database '''
