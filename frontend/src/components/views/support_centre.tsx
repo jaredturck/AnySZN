@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import banner1 from "../../imgs/banners/img2.jpg";
+import banner1 from "../../imgs/banners/img2.png";
 import { ClothingBanner } from "../clothing_banner";
 import { GenericPageSection } from "./generic_text";
 import { fetchJson } from "../api_fetch";

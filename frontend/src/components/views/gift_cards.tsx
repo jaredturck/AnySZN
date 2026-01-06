@@ -1,5 +1,5 @@
 import { ClothingBanner } from "../clothing_banner";
-import banner1 from "../../imgs/banners/gift_card.jpg";
+import banner1 from "../../imgs/banners/gift_card.png";
 import { GenericPageSection } from "./generic_text";
 
 export function GiftCards() {

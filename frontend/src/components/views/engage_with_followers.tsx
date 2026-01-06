@@ -1,5 +1,5 @@
-import banner1 from "../../imgs/banners/engage_with_followers.webp";
-import engageImage from "../../imgs/banners/clothing_img1.webp";
+import banner1 from "../../imgs/banners/engage_with_followers.png";
+import engageImage from "../../imgs/banners/clothing_img1.png";
 import { ClothingBanner } from "../clothing_banner";
 import { GenericPageSection } from "./generic_text";
 

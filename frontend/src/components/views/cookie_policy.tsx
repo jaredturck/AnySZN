@@ -1,4 +1,4 @@
-import banner1 from "../../imgs/banners/cookie_policy.jpg";
+import banner1 from "../../imgs/banners/cookie_policy.png";
 import { ClothingBanner } from "../clothing_banner";
 import { GenericPageSection } from "./generic_text";
 
