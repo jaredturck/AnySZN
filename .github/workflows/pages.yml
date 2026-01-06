@@ -31,7 +31,7 @@ jobs:
       - run: CI=false npm run build
         working-directory: frontend
         env:
-          PUBLIC_URL: ${{ steps.pages.outputs.base_path || '/' }}
+          PUBLIC_URL: /
 
       - run: touch build/.nojekyll
         working-directory: frontend

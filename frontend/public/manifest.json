@@ -1,6 +1,17 @@
 {
+  "id": "/",
+  "scope": "/",
+  "start_url": "/",
+  "name": "AnyHJS",
   "short_name": "AnyHJS",
-  "name": "One platform. Hundreds of brands. Endless ways to style your season",
+  "description": "One platform. Hundreds of brands. Endless ways to style your season.",
+  "lang": "en-GB",
+  "dir": "ltr",
+  "display": "standalone",
+  "theme_color": "#BDFF00",
+  "background_color": "#000000",
+  "categories": ["shopping", "lifestyle", "fashion"],
+  "prefer_related_applications": false,
   "icons": [
     {
       "src": "favicon.ico",
@@ -8,18 +19,29 @@
       "type": "image/x-icon"
     },
     {
-      "src": "logo192.png",
-      "type": "image/png",
-      "sizes": "192x192"
+      "src": "favicon-16x16.png",
+      "sizes": "16x16",
+      "type": "image/png"
     },
     {
-      "src": "logo512.png",
-      "type": "image/png",
-      "sizes": "512x512"
+      "src": "favicon-32x32.png",
+      "sizes": "32x32",
+      "type": "image/png"
+    },
+    {
+      "src": "apple-touch-icon.png",
+      "sizes": "180x180",
+      "type": "image/png"
+    },
+    {
+      "src": "android-chrome-192x192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "android-chrome-512x512.png",
+      "sizes": "512x512",
+      "type": "image/png"
     }
-  ],
-  "start_url": ".",
-  "display": "standalone",
-  "theme_color": "#BDFF00",
-  "background_color": "#ffffff"
+  ]
 }
