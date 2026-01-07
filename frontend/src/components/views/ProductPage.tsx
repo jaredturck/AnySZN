@@ -1,7 +1,5 @@
 import React, { useMemo, useState } from "react";
-import "../../styles/ProductPage.scss";
 
-// Local placeholder images (swap to API images later)
 import productImg1 from "../../imgs/featured_products/mens_collection/Frame 31.png";
 import productImg2 from "../../imgs/featured_products/mens_collection/Frame 31 (1).png";
 import productImg3 from "../../imgs/featured_products/mens_collection/Frame 31 (2).png";
@@ -190,9 +188,16 @@ export default function ProductPage(props: ProductPageProps) {
     }, [product.images, selectedImageId]);
 
     const stockClassName = useMemo(() => {
-        if (product.stock.status === "out") return "stockPill stockPill--out";
-        if (product.stock.status === "low") return "stockPill stockPill--low";
-        return "stockPill stockPill--in";
+        const base =
+            "inline-flex items-center gap-2 rounded-full border border-black/10 bg-white/75 px-4 py-2 shadow-[0_10px_26px_rgba(0,0,0,0.06)]";
+
+        if (product.stock.status === "out") {
+            return `${base} [&>span:first-child]:bg-[rgba(255,59,48,0.92)] [&>span:first-child]:shadow-[0_0_0_6px_rgba(255,59,48,0.16)]`;
+        }
+        if (product.stock.status === "low") {
+            return `${base} [&>span:first-child]:bg-[#BDFF00] [&>span:first-child]:shadow-[0_0_0_6px_rgba(189,255,0,0.18)]`;
+        }
+        return `${base} [&>span:first-child]:bg-[#64ff9b] [&>span:first-child]:shadow-[0_0_0_6px_rgba(100,255,155,0.18)]`;
     }, [product.stock.status]);
 
     const mainImageAlt = useMemo(() => {
@@ -236,17 +241,17 @@ export default function ProductPage(props: ProductPageProps) {
     }
 
     return (
-        <section className="productPage">
-            <div className="productPage__wrap">
-                <nav className="productPage__crumbs" aria-label="Breadcrumb">
+        <section className="min-h-screen px-5 pb-16 pt-9 text-[#141414] sm:px-4 sm:pb-12 sm:pt-6 bg-[radial-gradient(900px_420px_at_18%_10%,rgba(189,255,0,0.18),rgba(189,255,0,0)_60%),radial-gradient(860px_520px_at_86%_14%,rgba(255,242,227,0.95),rgba(255,242,227,0)_70%),#FFF7EE]">
+            <div className="mx-auto max-w-[70rem] pt-5">
+                <nav className="mb-5 flex flex-wrap items-center gap-x-2 gap-y-1 text-[0.92rem] text-black/55" aria-label="Breadcrumb">
                     {breadcrumbs.map((crumb, index) => {
                         const isLast = index === breadcrumbs.length - 1;
 
                         if (isLast || !crumb.href) {
                             return (
                                 <React.Fragment key={crumb.id}>
-                                    {index > 0 ? <span className="productPage__crumbSep">/</span> : null}
-                                    <span className="productPage__crumbCurrent" aria-current="page">
+                                    {index > 0 ? <span className="opacity-50">/</span> : null}
+                                    <span className="font-extrabold text-black/75" aria-current="page">
                                         {crumb.label}
                                     </span>
                                 </React.Fragment>
@@ -255,8 +260,11 @@ export default function ProductPage(props: ProductPageProps) {
 
                         return (
                             <React.Fragment key={crumb.id}>
-                                {index > 0 ? <span className="productPage__crumbSep">/</span> : null}
-                                <a className="productPage__crumb" href={crumb.href}>
+                                {index > 0 ? <span className="opacity-50">/</span> : null}
+                                <a
+                                    className="rounded-md px-1 text-black/60 underline-offset-4 hover:text-black/80 hover:underline focus-visible:outline-none focus-visible:ring-4 focus-visible:ring-[rgba(189,255,0,0.55)]"
+                                    href={crumb.href}
+                                >
                                     {crumb.label}
                                 </a>
                             </React.Fragment>
@@ -264,66 +272,80 @@ export default function ProductPage(props: ProductPageProps) {
                     })}
                 </nav>
 
-                <div className="productPage__grid">
-                    <section className="productPage__gallery productGallery" aria-label="Product images">
-                        <div className="productGallery__thumbs" role="listbox" aria-label="Choose an image">
-                            {product.images.map((img) => {
-                                const isActive = img.id === selectedImage?.id;
-                                const className = isActive
-                                    ? "productGallery__thumb productGallery__thumb--active"
-                                    : "productGallery__thumb";
+                <div className="grid items-start gap-5 lg:grid-cols-[minmax(0,1.15fr)_minmax(0,0.85fr)]">
+                    <section className="min-w-0" aria-label="Product images">
+                        <div className="grid gap-4 md:grid-cols-[88px_minmax(0,1fr)] md:items-start">
+                            <div className="flex max-h-[560px] flex-col gap-3 overflow-auto pr-1 max-md:order-2 max-md:max-h-none max-md:flex-row max-md:overflow-x-auto max-md:overflow-y-hidden max-md:pr-0 max-md:pb-1" role="listbox" aria-label="Choose an image">
+                                {product.images.map((img) => {
+                                    const isActive = img.id === selectedImage?.id;
+                                    const className = isActive
+                                        ? "w-full aspect-square overflow-hidden rounded-[1.15rem] border border-black/25 bg-[radial-gradient(120px_90px_at_30%_20%,rgba(189,255,0,0.20),rgba(189,255,0,0)_72%),linear-gradient(180deg,rgba(255,242,227,0.55),rgba(255,255,255,0.82))] shadow-[0_16px_44px_rgba(0,0,0,0.12)] ring-4 ring-[rgba(189,255,0,0.16)] transition-[transform,box-shadow,border-color] duration-150 hover:-translate-y-[1px] hover:shadow-[0_14px_34px_rgba(0,0,0,0.11)] active:translate-y-0 focus-visible:outline-none focus-visible:ring-4 focus-visible:ring-[rgba(189,255,0,0.55)] max-md:w-[88px] max-md:flex-none"
+                                        : "w-full aspect-square overflow-hidden rounded-[1.15rem] border border-black/10 bg-[radial-gradient(120px_90px_at_30%_20%,rgba(189,255,0,0.20),rgba(189,255,0,0)_72%),linear-gradient(180deg,rgba(255,242,227,0.55),rgba(255,255,255,0.82))] shadow-[0_10px_24px_rgba(0,0,0,0.08)] transition-[transform,box-shadow,border-color] duration-150 hover:-translate-y-[1px] hover:border-black/20 hover:shadow-[0_14px_34px_rgba(0,0,0,0.11)] active:translate-y-0 focus-visible:outline-none focus-visible:ring-4 focus-visible:ring-[rgba(189,255,0,0.55)] max-md:w-[88px] max-md:flex-none";
 
-                                return (
-                                    <button
-                                        key={img.id}
-                                        className={className}
-                                        type="button"
-                                        aria-selected={isActive}
-                                        onClick={() => setSelectedImageId(img.id)}
-                                    >
-                                        <img className="productGallery__thumbImg" src={img.src} alt={img.alt} />
-                                    </button>
-                                );
-                            })}
+                                    return (
+                                        <button
+                                            key={img.id}
+                                            className={className}
+                                            type="button"
+                                            aria-selected={isActive}
+                                            onClick={() => setSelectedImageId(img.id)}
+                                        >
+                                            <img className="block h-full w-full object-cover" src={img.src} alt={img.alt} />
+                                        </button>
+                                    );
+                                })}
+                            </div>
+
+                            <figure className="relative m-0 flex min-h-[520px] items-center justify-center overflow-hidden rounded-[1.75rem] border border-black/5 bg-white shadow-[0_18px_46px_rgba(0,0,0,0.14)] max-md:min-h-[420px] before:pointer-events-none before:absolute before:inset-[-2px] before:content-[''] before:opacity-[0.92] before:bg-[radial-gradient(520px_240px_at_12%_10%,rgba(189,255,0,0.22),rgba(189,255,0,0)_60%),radial-gradient(520px_260px_at_88%_14%,rgba(100,255,155,0.16),rgba(100,255,155,0)_66%),radial-gradient(780px_420px_at_40%_120%,rgba(255,242,227,0.85),rgba(255,242,227,0)_70%)] after:pointer-events-none after:absolute after:inset-0 after:content-[''] after:bg-[linear-gradient(180deg,rgba(255,255,255,0.12),rgba(0,0,0,0.02))]">
+                                <div className="absolute left-4 top-4 z-20 inline-flex items-center gap-2 rounded-full border border-black/5 bg-white/80 px-4 py-2 text-sm font-extrabold shadow-[0_12px_32px_rgba(0,0,0,0.09)] backdrop-blur-[10px]">
+                                    <span className="h-[0.55rem] w-[0.55rem] rounded-full bg-[#BDFF00] shadow-[0_0_0_6px_rgba(189,255,0,0.18)]" />
+                                    New Drop
+                                </div>
+
+                                {selectedImage ? (
+                                    <img
+                                        className="relative z-10 block h-full w-full object-contain p-[2.2rem] pb-[3.4rem]"
+                                        src={selectedImage.src}
+                                        alt={mainImageAlt}
+                                    />
+                                ) : null}
+
+                                <div className="absolute bottom-4 left-4 z-20 flex flex-wrap gap-2" aria-label="Shipping and returns highlights">
+                                    <span className="inline-flex h-[30px] items-center rounded-full border border-black/10 bg-black/5 px-4 text-[0.9rem] font-extrabold text-black/70">
+                                        Free returns
+                                    </span>
+                                    <span className="inline-flex h-[30px] items-center rounded-full border border-black/10 bg-black/5 px-4 text-[0.9rem] font-extrabold text-black/70">
+                                        Ships in 24h
+                                    </span>
+                                </div>
+                            </figure>
                         </div>
-
-                        <figure className="productGallery__main">
-                            <div className="productGallery__badge">
-                                <span className="productGallery__badgeDot" />
-                                New Drop
-                            </div>
-
-                            {selectedImage ? (
-                                <img className="productGallery__mainImg" src={selectedImage.src} alt={mainImageAlt} />
-                            ) : null}
-
-                            <div className="productGallery__meta" aria-label="Shipping and returns highlights">
-                                <span className="productGallery__metaPill">Free returns</span>
-                                <span className="productGallery__metaPill">Ships in 24h</span>
-                            </div>
-                        </figure>
                     </section>
 
-                    <aside className="productPage__info productInfo" aria-label="Product information">
-                        <header className="productInfo__header">
-                            <p className="productInfo__brand">{product.brand}</p>
-                            <h1 className="productInfo__title">{product.name}</h1>
+                    <aside className="min-w-0 rounded-[1.75rem] border border-black/5 bg-white/80 p-5 shadow-[0_14px_34px_rgba(0,0,0,0.10)] backdrop-blur-[10px]" aria-label="Product information">
+                        <header className="mb-4">
+                            <p className="m-0 mb-1 font-black tracking-[-0.01em] text-black/70">{product.brand}</p>
+                            <h1 className="m-0 mb-2 text-[2rem] font-black leading-[1.08] tracking-[-0.03em] max-sm:text-[1.7rem]">
+                                {product.name}
+                            </h1>
 
-                            <div className="productInfo__sub">
-                                <span className="productInfo__sku">SKU: {product.sku}</span>
-                                <span className="productInfo__subDot">•</span>
-                                <span className="productInfo__tag">{product.tags[0] ?? "New"}</span>
+                            <div className="flex flex-wrap items-center gap-2 text-[0.95rem] text-black/55">
+                                <span className="font-extrabold text-black/55">SKU: {product.sku}</span>
+                                <span className="opacity-60">•</span>
+                                <span className="inline-flex h-[26px] items-center rounded-full border border-black/10 bg-[rgba(189,255,0,0.20)] px-3 text-[0.86rem] font-black text-black/75">
+                                    {product.tags[0] ?? "New"}
+                                </span>
                             </div>
                         </header>
 
-                        <div className="productInfo__buyRow">
-                            <p className="productInfo__price" aria-label="Price">
+                        <div className="mb-3 flex items-center justify-between gap-4">
+                            <p className="m-0 text-[1.55rem] font-black tracking-[-0.02em]" aria-label="Price">
                                 {formatMoney(product.price, product.currency)}
                             </p>
 
-                            <div className="productInfo__qty qtyStepper" aria-label="Quantity">
+                            <div className="inline-flex items-center gap-1 rounded-full border border-black/10 bg-black/5 p-1" aria-label="Quantity">
                                 <button
-                                    className="qtyStepper__btn"
+                                    className="h-[34px] w-[34px] rounded-full border border-black/10 bg-white/90 font-black transition-[transform,box-shadow] duration-150 hover:-translate-y-[1px] hover:shadow-[0_10px_22px_rgba(0,0,0,0.10)] active:translate-y-0 focus-visible:outline-none focus-visible:ring-4 focus-visible:ring-[rgba(189,255,0,0.55)]"
                                     type="button"
                                     aria-label="Decrease quantity"
                                     onClick={handleDecreaseQty}
@@ -332,7 +354,7 @@ export default function ProductPage(props: ProductPageProps) {
                                 </button>
 
                                 <input
-                                    className="qtyStepper__value"
+                                    className="h-[34px] w-[54px] rounded-[0.9rem] border border-transparent bg-transparent text-center font-black text-black/80 focus:outline-none focus:ring-4 focus:ring-[rgba(189,255,0,0.55)]"
                                     type="number"
                                     min={1}
                                     value={quantity}
@@ -342,7 +364,7 @@ export default function ProductPage(props: ProductPageProps) {
                                 />
 
                                 <button
-                                    className="qtyStepper__btn"
+                                    className="h-[34px] w-[34px] rounded-full border border-black/10 bg-white/90 font-black transition-[transform,box-shadow] duration-150 hover:-translate-y-[1px] hover:shadow-[0_10px_22px_rgba(0,0,0,0.10)] active:translate-y-0 focus-visible:outline-none focus-visible:ring-4 focus-visible:ring-[rgba(189,255,0,0.55)]"
                                     type="button"
                                     aria-label="Increase quantity"
                                     onClick={handleIncreaseQty}
@@ -352,30 +374,30 @@ export default function ProductPage(props: ProductPageProps) {
                             </div>
                         </div>
 
-                        <div className={`productInfo__stock ${stockClassName}`} role="status" aria-live="polite">
-                            <span className="stockPill__dot" />
-                            <span className="stockPill__text">{product.stock.label}</span>
+                        <div className={stockClassName} role="status" aria-live="polite">
+                            <span className="h-[0.6rem] w-[0.6rem] rounded-full" />
+                            <span className="font-black tracking-[-0.01em]">{product.stock.label}</span>
 
                             {product.stock.hint ? (
                                 <>
-                                    <span className="stockPill__sep">•</span>
-                                    <span className="stockPill__hint">{product.stock.hint}</span>
+                                    <span className="opacity-50">•</span>
+                                    <span className="font-extrabold text-black/55">{product.stock.hint}</span>
                                 </>
                             ) : null}
                         </div>
 
-                        <section className="productInfo__block" aria-label="Colour selection">
-                            <div className="productInfo__labelRow">
-                                <span className="productInfo__label">Colour</span>
-                                <span className="productInfo__hint">Tap to preview</span>
+                        <section className="mt-4 mb-3 rounded-[1.35rem] border border-black/5 bg-white/70 p-4 shadow-[0_10px_28px_rgba(0,0,0,0.06)]" aria-label="Colour selection">
+                            <div className="mb-3 flex items-baseline justify-between gap-4">
+                                <span className="font-black tracking-[-0.01em]">Colour</span>
+                                <span className="text-[0.92rem] text-black/55">Tap to preview</span>
                             </div>
 
-                            <div className="swatches swatches--colors" role="radiogroup" aria-label="Choose a colour">
+                            <div className="flex flex-wrap items-center gap-3" role="radiogroup" aria-label="Choose a colour">
                                 {product.colors.map((color) => {
                                     const isActive = color.id === selectedColorId;
                                     const className = isActive
-                                        ? "swatches__swatch swatches__swatch--active"
-                                        : "swatches__swatch";
+                                        ? "relative h-10 w-10 rounded-full border border-black/10 bg-[var(--swatch)] transition-[transform,box-shadow] duration-150 hover:-translate-y-[1px] hover:shadow-[0_14px_30px_rgba(0,0,0,0.10)] active:translate-y-0 focus-visible:outline-none focus-visible:ring-4 focus-visible:ring-[rgba(189,255,0,0.55)] shadow-[0_18px_42px_rgba(0,0,0,0.12)] ring-4 ring-[rgba(189,255,0,0.16)] after:pointer-events-none after:absolute after:inset-[-5px] after:rounded-full after:border-2 after:border-black/20 after:content-['']"
+                                        : "relative h-10 w-10 rounded-full border border-black/10 bg-[var(--swatch)] transition-[transform,box-shadow] duration-150 hover:-translate-y-[1px] hover:shadow-[0_14px_30px_rgba(0,0,0,0.10)] active:translate-y-0 focus-visible:outline-none focus-visible:ring-4 focus-visible:ring-[rgba(189,255,0,0.55)] after:pointer-events-none after:absolute after:inset-[-5px] after:rounded-full after:border-2 after:border-transparent after:content-['']";
 
                                     return (
                                         <button
@@ -392,20 +414,23 @@ export default function ProductPage(props: ProductPageProps) {
                             </div>
                         </section>
 
-                        <section className="productInfo__block" aria-label="Size selection">
-                            <div className="productInfo__labelRow">
-                                <span className="productInfo__label">Size</span>
-                                <a className="productInfo__link" href="#">
+                        <section className="mb-3 rounded-[1.35rem] border border-black/5 bg-white/70 p-4 shadow-[0_10px_28px_rgba(0,0,0,0.06)]" aria-label="Size selection">
+                            <div className="mb-3 flex items-baseline justify-between gap-4">
+                                <span className="font-black tracking-[-0.01em]">Size</span>
+                                <a
+                                    className="rounded-md px-1 font-black text-black/70 underline underline-offset-4 hover:text-black/90 focus-visible:outline-none focus-visible:ring-4 focus-visible:ring-[rgba(189,255,0,0.55)]"
+                                    href="#"
+                                >
                                     Size guide
                                 </a>
                             </div>
 
-                            <div className="sizePicker" role="radiogroup" aria-label="Choose a size">
+                            <div className="flex flex-wrap items-center gap-2" role="radiogroup" aria-label="Choose a size">
                                 {product.sizes.map((size) => {
                                     const isActive = size.id === selectedSizeId;
                                     const className = isActive
-                                        ? "sizePicker__option sizePicker__option--active"
-                                        : "sizePicker__option";
+                                        ? "h-10 min-w-[46px] rounded-full border border-black/10 bg-[linear-gradient(135deg,rgba(189,255,0,0.40),rgba(100,255,155,0.18))] px-4 font-black transition-[transform,box-shadow] duration-150 hover:-translate-y-[1px] hover:shadow-[0_12px_26px_rgba(0,0,0,0.09)] active:translate-y-0 focus-visible:outline-none focus-visible:ring-4 focus-visible:ring-[rgba(189,255,0,0.55)] shadow-[0_14px_34px_rgba(0,0,0,0.10)] ring-4 ring-[rgba(189,255,0,0.14)] disabled:cursor-not-allowed disabled:opacity-45"
+                                        : "h-10 min-w-[46px] rounded-full border border-black/10 bg-white/85 px-4 font-black transition-[transform,box-shadow] duration-150 hover:-translate-y-[1px] hover:shadow-[0_12px_26px_rgba(0,0,0,0.09)] active:translate-y-0 focus-visible:outline-none focus-visible:ring-4 focus-visible:ring-[rgba(189,255,0,0.55)] disabled:cursor-not-allowed disabled:opacity-45";
 
                                     return (
                                         <button
@@ -422,17 +447,19 @@ export default function ProductPage(props: ProductPageProps) {
                                 })}
                             </div>
 
-                            {product.fitNote ? <p className="productInfo__fitNote">{product.fitNote}</p> : null}
+                            {product.fitNote ? (
+                                <p className="m-0 mt-3 text-[0.95rem] leading-relaxed text-black/55">{product.fitNote}</p>
+                            ) : null}
                         </section>
 
-                        <section className="productInfo__desc" aria-label="Description">
-                            <p className="productInfo__descTitle">Description</p>
-                            <p className="productInfo__descText">{product.description}</p>
+                        <section className="mt-1 mb-5" aria-label="Description">
+                            <p className="m-0 mb-2 font-black tracking-[-0.01em]">Description</p>
+                            <p className="m-0 leading-relaxed text-black/70">{product.description}</p>
                         </section>
 
-                        <div className="productInfo__actions" aria-label="Actions">
+                        <div className="mb-4 flex items-center gap-3" aria-label="Actions">
                             <button
-                                className="productInfo__addBtn"
+                                className="h-[52px] flex-1 rounded-[1.1rem] border border-black/10 bg-[linear-gradient(135deg,rgba(189,255,0,0.62),rgba(100,255,155,0.24))] font-black tracking-[-0.01em] shadow-[0_14px_34px_rgba(0,0,0,0.10)] transition-[transform,box-shadow,filter,opacity] duration-150 hover:-translate-y-[1px] hover:shadow-[0_18px_44px_rgba(0,0,0,0.13)] hover:saturate-105 active:translate-y-0 focus-visible:outline-none focus-visible:ring-4 focus-visible:ring-[rgba(189,255,0,0.55)] disabled:cursor-not-allowed disabled:opacity-55 disabled:grayscale"
                                 type="button"
                                 onClick={handleAddToCart}
                                 disabled={product.stock.status === "out"}
@@ -441,59 +468,71 @@ export default function ProductPage(props: ProductPageProps) {
                             </button>
 
                             <button
-                                className="productInfo__favBtn"
+                                className="group h-[52px] w-[52px] rounded-[1.1rem] border border-black/10 bg-white/85 shadow-[0_12px_30px_rgba(0,0,0,0.08)] transition-[transform,box-shadow,border-color] duration-150 hover:-translate-y-[1px] hover:border-black/20 hover:shadow-[0_16px_40px_rgba(0,0,0,0.12)] active:translate-y-0 focus-visible:outline-none focus-visible:ring-4 focus-visible:ring-[rgba(189,255,0,0.55)] aria-pressed:border-black/20 aria-pressed:ring-4 aria-pressed:ring-[rgba(189,255,0,0.14)]"
                                 type="button"
                                 aria-pressed={isFavorite}
                                 aria-label={isFavorite ? "Remove from favourites" : "Add to favourites"}
                                 onClick={handleToggleFavorite}
                             >
-                                <svg className="productInfo__favIcon" viewBox="0 0 24 24" aria-hidden="true">
+                                <svg className="h-[22px] w-[22px] fill-black/30 transition-colors group-[aria-pressed=true]:fill-black/80" viewBox="0 0 24 24" aria-hidden="true">
                                     <path d="M12 21s-7.2-4.4-9.6-8.7C.7 9.3 2.3 5.8 5.8 5.1c1.9-.4 3.8.3 5 1.7 1.2-1.4 3.1-2.1 5-1.7 3.5.7 5.1 4.2 3.4 7.2C19.2 16.6 12 21 12 21z" />
                                 </svg>
                             </button>
                         </div>
 
-                        <div className="productInfo__trust" aria-label="Trust signals">
-                            <div className="productInfo__trustItem">
-                                <span className="productInfo__trustIcon">✓</span>
+                        <div className="grid grid-cols-1 gap-2 sm:grid-cols-3" aria-label="Trust signals">
+                            <div className="inline-flex items-center gap-2 rounded-[1.15rem] border border-black/5 bg-white/70 px-4 py-3 font-extrabold text-black/70 shadow-[0_10px_26px_rgba(0,0,0,0.06)]">
+                                <span className="inline-flex h-[1.35rem] w-[1.35rem] items-center justify-center rounded-full border border-black/10 bg-[rgba(189,255,0,0.25)] font-black">
+                                    ✓
+                                </span>
                                 Secure checkout
                             </div>
-                            <div className="productInfo__trustItem">
-                                <span className="productInfo__trustIcon">↺</span>
+                            <div className="inline-flex items-center gap-2 rounded-[1.15rem] border border-black/5 bg-white/70 px-4 py-3 font-extrabold text-black/70 shadow-[0_10px_26px_rgba(0,0,0,0.06)]">
+                                <span className="inline-flex h-[1.35rem] w-[1.35rem] items-center justify-center rounded-full border border-black/10 bg-[rgba(189,255,0,0.25)] font-black">
+                                    ↺
+                                </span>
                                 30-day returns
                             </div>
-                            <div className="productInfo__trustItem">
-                                <span className="productInfo__trustIcon">⚡</span>
+                            <div className="inline-flex items-center gap-2 rounded-[1.15rem] border border-black/5 bg-white/70 px-4 py-3 font-extrabold text-black/70 shadow-[0_10px_26px_rgba(0,0,0,0.06)]">
+                                <span className="inline-flex h-[1.35rem] w-[1.35rem] items-center justify-center rounded-full border border-black/10 bg-[rgba(189,255,0,0.25)] font-black">
+                                    ⚡
+                                </span>
                                 Fast dispatch
                             </div>
                         </div>
                     </aside>
                 </div>
 
-                <section className="productRecs" aria-label="Recommended products">
-                    <header className="productRecs__header">
-                        <div className="productRecs__titleBlock">
-                            <p className="productRecs__kicker">
-                                <span className="productRecs__kickerDot" />
+                <section className="mt-6 rounded-[1.9rem] border border-black/5 p-5 shadow-[0_14px_34px_rgba(0,0,0,0.10)] bg-[radial-gradient(620px_240px_at_16%_25%,rgba(189,255,0,0.14),rgba(189,255,0,0)_60%),linear-gradient(180deg,rgba(255,255,255,0.78),rgba(255,242,227,0.55))]" aria-label="Recommended products">
+                    <header className="mb-4 flex flex-col gap-3 sm:flex-row sm:items-end sm:justify-between">
+                        <div className="min-w-0">
+                            <p className="m-0 mb-1 inline-flex items-center gap-2 text-[0.92rem] font-extrabold text-black/55">
+                                <span className="h-[0.6rem] w-[0.6rem] rounded-full bg-[#BDFF00] shadow-[0_0_0_6px_rgba(189,255,0,0.18)]" />
                                 Pair it up
                             </p>
-                            <h2 className="productRecs__title">Complete the fit</h2>
+                            <h2 className="m-0 text-[1.4rem] font-black tracking-[-0.03em]">Complete the fit</h2>
                         </div>
 
-                        <a className="productRecs__link" href="#">
+                        <a
+                            className="rounded-md px-1 font-black text-black/70 underline underline-offset-4 hover:text-black/90 focus-visible:outline-none focus-visible:ring-4 focus-visible:ring-[rgba(189,255,0,0.55)]"
+                            href="#"
+                        >
                             View all
                         </a>
                     </header>
 
-                    <div className="productRecs__grid">
+                    <div className="grid grid-cols-1 gap-3 sm:grid-cols-2 lg:grid-cols-4">
                         {recommendations.map((rec) => (
-                            <article key={rec.id} className="recCard">
-                                <div className="recCard__media">
-                                    <img className="recCard__img" src={rec.image.src} alt={rec.image.alt} />
+                            <article
+                                key={rec.id}
+                                className="cursor-pointer overflow-hidden rounded-[1.45rem] border border-black/5 bg-white/85 shadow-[0_12px_28px_rgba(0,0,0,0.08)] transition-[transform,box-shadow,border-color] duration-150 hover:-translate-y-[2px] hover:border-black/20 hover:shadow-[0_18px_44px_rgba(0,0,0,0.12)] focus-within:outline-none focus-within:ring-4 focus-within:ring-[rgba(189,255,0,0.55)]"
+                            >
+                                <div className="p-4 bg-[radial-gradient(260px_120px_at_25%_18%,rgba(189,255,0,0.16),rgba(189,255,0,0)_70%),rgba(0,0,0,0.03)]">
+                                    <img className="block h-[140px] w-full rounded-[1.1rem] border border-black/10 object-cover" src={rec.image.src} alt={rec.image.alt} />
                                 </div>
-                                <div className="recCard__body">
-                                    <p className="recCard__name">{rec.name}</p>
-                                    <p className="recCard__price">{formatMoney(rec.price, rec.currency)}</p>
+                                <div className="p-4 pt-3">
+                                    <p className="m-0 mb-1 font-black tracking-[-0.01em]">{rec.name}</p>
+                                    <p className="m-0 font-extrabold text-black/70">{formatMoney(rec.price, rec.currency)}</p>
                                 </div>
                             </article>
                         ))}
