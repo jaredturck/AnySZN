@@ -37,7 +37,9 @@ export function EngageWithFollowers() {
                     <img
                         src={engageImage}
                         alt="AnyHJS community and social media banner"
-                        style={{ width: "100%", borderRadius: "12px" }}
+                        className="w-full rounded-xl"
+                        loading="lazy"
+                        decoding="async"
                     />
                 </figure>
 
@@ -51,57 +53,59 @@ export function EngageWithFollowers() {
                     tag us in your looks, and let us know what you want to see more of.
                 </p>
 
-                <table>
-                    <thead>
-                        <tr>
-                            <th>Platform</th>
-                            <th>Handle</th>
-                            <th>What You’ll Find</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td>Instagram</td>
-                            <td>@AnyHJS (placeholder)</td>
-                            <td>Daily outfit inspiration, drops, styling reels and community features.</td>
-                        </tr>
-                        <tr>
-                            <td>TikTok</td>
-                            <td>@AnyHJS (placeholder)</td>
-                            <td>Short-form styling tips, trend breakdowns and behind-the-scenes content.</td>
-                        </tr>
-                        <tr>
-                            <td>YouTube</td>
-                            <td>AnyHJS (placeholder)</td>
-                            <td>Long-form lookbooks, styling guides, interviews and fashion deep dives.</td>
-                        </tr>
-                        <tr>
-                            <td>Pinterest</td>
-                            <td>@AnyHJS (placeholder)</td>
-                            <td>Curated moodboards, outfit boards and seasonal trend collections.</td>
-                        </tr>
-                        <tr>
-                            <td>Twitter / X</td>
-                            <td>@AnyHJS (placeholder)</td>
-                            <td>Real-time updates, news, drops and quick community chats.</td>
-                        </tr>
-                        <tr>
-                            <td>Discord</td>
-                            <td>AnyHJS Community (placeholder)</td>
-                            <td>Chat with other members, share outfits, vote on future features and drops.</td>
-                        </tr>
-                        <tr>
-                            <td>Snapchat</td>
-                            <td>AnyHJS (placeholder)</td>
-                            <td>Quick sneak peeks, early looks and exclusive behind-the-scenes moments.</td>
-                        </tr>
-                        <tr>
-                            <td>News Section</td>
-                            <td>On our website</td>
-                            <td>Official announcements, feature updates, collaborations and brand news.</td>
-                        </tr>
-                    </tbody>
-                </table>
+                <div className="overflow-x-auto">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Platform</th>
+                                <th>Handle</th>
+                                <th>What You’ll Find</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Instagram</td>
+                                <td>@AnyHJS (placeholder)</td>
+                                <td>Daily outfit inspiration, drops, styling reels and community features.</td>
+                            </tr>
+                            <tr>
+                                <td>TikTok</td>
+                                <td>@AnyHJS (placeholder)</td>
+                                <td>Short-form styling tips, trend breakdowns and behind-the-scenes content.</td>
+                            </tr>
+                            <tr>
+                                <td>YouTube</td>
+                                <td>AnyHJS (placeholder)</td>
+                                <td>Long-form lookbooks, styling guides, interviews and fashion deep dives.</td>
+                            </tr>
+                            <tr>
+                                <td>Pinterest</td>
+                                <td>@AnyHJS (placeholder)</td>
+                                <td>Curated moodboards, outfit boards and seasonal trend collections.</td>
+                            </tr>
+                            <tr>
+                                <td>Twitter / X</td>
+                                <td>@AnyHJS (placeholder)</td>
+                                <td>Real-time updates, news, drops and quick community chats.</td>
+                            </tr>
+                            <tr>
+                                <td>Discord</td>
+                                <td>AnyHJS Community (placeholder)</td>
+                                <td>Chat with other members, share outfits, vote on future features and drops.</td>
+                            </tr>
+                            <tr>
+                                <td>Snapchat</td>
+                                <td>AnyHJS (placeholder)</td>
+                                <td>Quick sneak peeks, early looks and exclusive behind-the-scenes moments.</td>
+                            </tr>
+                            <tr>
+                                <td>News Section</td>
+                                <td>On our website</td>
+                                <td>Official announcements, feature updates, collaborations and brand news.</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
 
                 <p>
                     Please replace the placeholder handles above with your actual social media usernames and
