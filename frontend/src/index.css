@@ -1,13 +1,76 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+@import "tailwindcss";
+
+:root {
+  --pure-black: #000;
+  --accent-color: #BDFF00;
+  --light-white: #BDBDBD;
+  --cream-white: #FFF7EE;
+  --soft-black: #1A1A1A;
+
+  --feature-roadmap-accent-outline: #f5ffb4;
+
+  --surface-white: #ffffff;
+  --surface-tint: #FFF2E3;
+  --text-muted: #5C5C5C;
+
+  --border-soft: rgba(0, 0, 0, 0.08);
+  --border-softer: rgba(0, 0, 0, 0.05);
+
+  --shadow-soft: 0 14px 34px rgba(0, 0, 0, 0.10);
+  --shadow-lift: 0 18px 46px rgba(0, 0, 0, 0.14);
+
+  --max-page-width: 70rem;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+@font-face {
+  font-family: "Lato";
+  src: url("../fonts/Lato/Lato-Regular.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Lato";
+  src: url("../fonts/Lato/Lato-Bold.ttf") format("truetype");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+@layer base {
+  body {
+    margin: 0;
+    background: var(--cream-white);
+    color: var(--pure-black);
+    font-family: "Lato", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  code {
+    font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+  }
+}
+
+@layer utilities {
+  .padding-top-4rem {
+    @apply pt-16;
+  }
+}
+
+:root {
+  --accent-rgb: 189 255 0;
+  --accent-rgb: 189 255 0;
+}
+
+@keyframes featuredBrandsScroll {
+  from { transform: translate3d(0, 0, 0); }
+  to { transform: translate3d(-50%, 0, 0); }
+}
+
+@layer utilities {
+  .animate-featured-brands-scroll {
+    animation: featuredBrandsScroll 28s linear infinite;
+  }
 }

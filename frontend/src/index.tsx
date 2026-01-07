@@ -9,7 +9,8 @@ const root = ReactDOM.createRoot(
   document.getElementById('root') as HTMLElement
 );
 
-const basename = process.env.PUBLIC_URL && process.env.PUBLIC_URL !== "." ? process.env.PUBLIC_URL : undefined;
+const base = import.meta.env.BASE_URL;
+const basename = base === "/" ? undefined : base.replace(/\/$/, "");
 
 root.render(
   <React.StrictMode>
